@@ -8,7 +8,6 @@
 
 import Quick
 import Nimble
-import Funky
 
 
 public class ListTypeSpecArgs <L: ListType where L.ListIndex.Distance == Int>

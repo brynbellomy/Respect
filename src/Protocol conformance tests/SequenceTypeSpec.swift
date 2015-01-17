@@ -8,7 +8,6 @@
 
 import Quick
 import Nimble
-import Funky
 
 
 public class SequenceTypeSpecArgs <S: SequenceType>
@@ -41,7 +40,7 @@ public class SequenceTypeSpec <S: SequenceType>
                     while let next = gen.next() {
                         arr.append(next)
                     }
-                    let subjSequence: [S.Generator.Element] = collect(args.subject)
+                    let subjSequence: [S.Generator.Element] = Array(args.subject)
 
                     expect(equal(arr, shouldMatch, equality)).to(beTrue())
                 }
