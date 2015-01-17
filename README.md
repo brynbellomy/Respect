@@ -16,6 +16,8 @@ In your `Cartfile`:
 
 ```
 github "brynbellomy/Respect"
+github "Quick/Quick"
+github "Quick/Nimble"
 ```
 
 In your project root, run:
@@ -32,7 +34,12 @@ For the time being, only the pre-release beta of CocoaPods 0.36 is capable of wo
 In your `Podfile`:
 
 ```
-pod 'SwiftDataStructures'
+target :MyTestTarget do
+    pod 'Respect', :git => 'https://github.com/brynbellomy/Respect.git'
+    pod 'Quick', :git => 'https://github.com/Quick/Quick.git'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git'
+end
+
 ```
 
 In your project root, run:
