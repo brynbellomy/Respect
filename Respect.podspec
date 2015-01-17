@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.framework = 'XCTest'
+  s.dependency 'Quick'
+  s.dependency 'Nimble'
 
   s.source = { :git => 'https://github.com/brynbellomy/Respect.git', :tag => s.version }
 end
