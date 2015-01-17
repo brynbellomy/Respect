@@ -1,3 +1,0 @@
-[submodule "vendor/Quick"]
-	path = vendor/Quick
-	url = git://github.com/Quick/Quick.git
