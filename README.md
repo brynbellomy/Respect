@@ -14,7 +14,7 @@ Testing helpers (for use with [Quick](https://github.com/Quick/Quick) and [Nimbl
 
 In your `Cartfile`:
 
-```
+```ruby
 github "brynbellomy/Respect"
 github "Quick/Quick"
 github "Quick/Nimble"
@@ -33,7 +33,7 @@ For the time being, only the pre-release beta of CocoaPods 0.36 is capable of wo
 
 In your `Podfile`:
 
-```
+```ruby
 target :MyTestTarget do
     pod 'Respect', :git => 'https://github.com/brynbellomy/Respect.git'
     pod 'Quick', :git => 'https://github.com/Quick/Quick.git'
